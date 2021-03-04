@@ -1,0 +1,11 @@
+on:
+  schedule:
+    - cron: '42 * * * *'
+
+jobs:
+  URL-health-check:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: jtalk/url-health-check-action@v1.4
+        with:
+          url: https://markku63-pokedex.herokuapp.com/health
