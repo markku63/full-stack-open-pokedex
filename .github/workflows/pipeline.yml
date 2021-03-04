@@ -79,7 +79,7 @@ jobs:
             {
               attachments: [
                 {
-                  fallback: 'Succesful deployment',
+                  fallback: 'Succesful build',
                   color: 'good',
                   text: `a new version (${process.env.AS_COMMIT}) by ${process.env.AS_AUTHOR} built and tested in ${process.env.AS_TOOK}`,
                 }
